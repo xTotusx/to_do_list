@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi To-Do List</title>
+    <title>Listas de Tareas Personalizables</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="todo-container">
-        <h1>Mi Lista de Tareas</h1>
+    <div class="app-container">
+        <h1>Mis Listas de Tareas Personalizables</h1>
         
-        <div class="input-section">
-            <input type="text" id="task-input" placeholder="Escribe una nueva tarea...">
-            <button id="add-task-btn">Agregar</button>
+        <div class="list-creation">
+            <input type="text" id="list-name-input" placeholder="Nombre de la nueva lista">
+            <input type="color" id="list-color-input" value="#f9f9f9" title="Color de la lista">
+            <button id="create-list-btn">Crear Lista</button>
         </div>
         
-        <ul id="task-list">
-            <!-- Las tareas se agregarán aquí dinámicamente -->
-        </ul>
+        <div id="lists-container" class="lists-container">
+            <!-- Las listas se agregarán aquí dinámicamente -->
+        </div>
     </div>
 
     <script src="script.js"></script>
